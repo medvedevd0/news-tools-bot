@@ -1,16 +1,31 @@
 <p align="center">
-  <img height="200" width="200" src="https://news-tools.ru/static/img/logo.png">
+  <img height="200" width="200" src="https://docs.news-tools.ru/static/logodark.png">
 </p>
 
 <h1 align="center">News Tools</h1>
 
 <p align="center">Система управления новостным департаментом для вашего сервера. Работает с помощью <a href="https://github.com/DisnakeDev/disnake">disnake</a></p>
 
+<p align="center">
+  <a href="https://discord.gg/tKDdwpknSR">
+    <img src="https://img.shields.io/badge/discord-News_Tools_Lounge-blue?logo=discord" />
+  </a>
+  <a href="https://github.com/noadevereux/news-tools-bot/releases/tag/v1.4">
+    <img src="https://img.shields.io/github/v/release/wkmeupinside/news-tools-bot" />
+  </a>
+  <a href="https://github.com/wkmeupinside/news-tools-bot?tab=License-1-ov-file">
+    <img src="https://img.shields.io/badge/license-NCOSL-red" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/stars/wkmeupinside/news-tools-bot" />
+  </a>
+</p>
+
 ## Общая информация
 
 ### Условия использования и лицензирования
 
-Все условия использования данного програмного обеспечения и лицензирования описаны в [LICENSE](LICENSE), пожалуйста ознакомьтесь с лицензией перед использованием.
+Все условия использования данного програмного обеспечения и лицензирования описаны в [LICENSE](https://github.com/wkmeupinside/news-tools-bot?tab=License-1-ov-file), пожалуйста ознакомьтесь с лицензией перед использованием.
 
 ### Вклад
 
@@ -121,6 +136,11 @@ cd news-tools-bot
 cp .env.example .env
 ```
 
+Генерируем JWT_SECRET. Полученное значение понадобится нам в следующем этапе.
+```bash
+openssl rand -base64 64 | tr -d '\n'
+```
+
 Редактируем файл `.env` и устанавливаем переменные окружения. Это важный шаг, поэтому рассмотрим его подробнее.
 
 - **TOKEN** - токен бота Discord, который можно получить на портале разработчиков.
@@ -128,7 +148,7 @@ cp .env.example .env
 - **MYSQL_USER** - имя пользователя, которым будет пользоваться приложение. Оно нам не понадобится, можно установить любое, например `news`.
 - **MYSQL_PASSWORD** - пароль от пользователя MySQL, которым будет пользоваться приложение. Он нам не понадобится, но важно использовать надежный пароль.
 - **MYSQL_DATABASE** - название базы данных для приложения. Лучше выбрать что-то короткое и лаконичное, например `news`.
-- **JWT_SECRET** - ключ для подписи JWT-токенов, которые используются для авторизации в API приложения. Мы сгенерируем его позже. **НЕ ОСТАВЛЯТЬ ПУСТЫМ! (только если вы не захотите отключить API, об этом подробнее далее).**
+- **JWT_SECRET** - ключ для подписи JWT-токенов, которые используются для авторизации в API приложения. Мы сгенерируем его позже. **НЕ ОСТАВЛЯТЬ ПУСТЫМ!.**
 - **JWT_ALGORITHM** - алгоритм подписи ключей. Рекомендуется оставить по-умолчанию (`HS256`), если только вы не знаете что делаете.
 - **API_PORT** - порт, по которому будет доступен API. Обратите внимание, что порт внутри контейнера будет всегда равен `8080`. Эта переменная отвечает за порт на хост-машине по которому будет доступен API.
 - **DEV_GUILD** - Discord ID сервера, на котором будут зарегистрированы команды разработчика.
