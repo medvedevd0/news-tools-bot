@@ -3,17 +3,14 @@
 <p align="center">Система управления новостным департаментом для вашего сервера. Работает с помощью <a href="https://github.com/DisnakeDev/disnake">disnake</a></p>
 
 <p align="center">
-  <a href="https://discord.gg/tKDdwpknSR">
-    <img src="https://img.shields.io/badge/discord-News_Tools_Lounge-blue?logo=discord" />
+  <a href="https://github.com/medvedevd0/news-tools-bot/releases/tag/v1.4">
+    <img src="https://img.shields.io/github/v/release/medvedevd0/news-tools-bot" />
   </a>
-  <a href="https://github.com/noadevereux/news-tools-bot/releases/tag/v1.4">
-    <img src="https://img.shields.io/github/v/release/wkmeupinside/news-tools-bot" />
-  </a>
-  <a href="https://github.com/wkmeupinside/news-tools-bot?tab=License-1-ov-file">
+  <a href="https://github.com/medvedevd0/news-tools-bot?tab=License-1-ov-file">
     <img src="https://img.shields.io/badge/license-NCOSL-red" />
   </a>
   <a href="#">
-    <img src="https://img.shields.io/github/stars/wkmeupinside/news-tools-bot" />
+    <img src="https://img.shields.io/github/stars/medvedevd0/news-tools-bot" />
   </a>
 </p>
 
@@ -21,11 +18,11 @@
 
 ### Условия использования и лицензирования
 
-Все условия использования данного програмного обеспечения и лицензирования описаны в [LICENSE](https://github.com/wkmeupinside/news-tools-bot?tab=License-1-ov-file), пожалуйста ознакомьтесь с лицензией перед использованием.
+Все условия использования данного програмного обеспечения и лицензирования описаны в [LICENSE](https://github.com/medvedevd0/news-tools-bot?tab=License-1-ov-file), пожалуйста ознакомьтесь с лицензией перед использованием.
 
 ### Вклад
 
-Так как News Tools сейчас является Open Source програмным обеспечением, любой может вносить вклад в его разработку. Вы можете как модифицировать локальные копии для своего использования, так и при желании вы можете сделать fork репозитория и посредством pull-requests вносить изменения непосредственно в этот репозиторий, которые в дальнейшем будут доступны для всех. Изначально изменения вносятся в community ветку, и в будущем могут быть смержены в main при рассмотрении.
+News Tools более не поддерживается автором, поэтому чтобы внести изменения в репозиторий - создайте fork.
 
 ### Аттрибуция
 
@@ -33,13 +30,7 @@
 
 ### Предложения
 
-News Tools более не поддерживается и не обновляется автором, но вы все равно можете вносить предложения по улучшению через Issues; возможно они будут кем-то реализованы.
-
-Также вы можете вносить предложения по улучшению данной инструкции по установке, эти предложения будут рассмотрены автором и при необходимости реализованы.
-
-### Сообщество News Tools
-
-У News Tools есть сообщество, это Discord сервер [**News Tools Lounge**](https://discord.gg/tKDdwpknSR). Там вы можете обсудить любые темы, связанные с приложением, а также связаться с автором.
+News Tools не поддерживается автором с сентября 2024 года, поэтому предложения по улучшению более не принимаются.
 
 ## Установка
 Для того, чтобы News Tools было доступно массово, установка была упрощена до развертывания через Docker Compose. Это означает, что вам не нужно устанавливать все необходимые компоненты самостоятельно. Достаточно только установить компоненты Docker и склонировать исходный код приложения. 🥱
@@ -306,7 +297,3 @@ INSERT INTO `makers` (`guild_id`, `discord_id`, `nickname`, `level`, `is_admin`)
 ```
 
 **На этом этапе процесс установки можно считать завершенным.**
-
-## Экспорт данных и бэкапы
-
-*В процессе написания...*
