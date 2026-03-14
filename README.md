@@ -1,7 +1,3 @@
-<p align="center">
-  <img height="200" width="200" src="https://docs.news-tools.ru/static/logodark.png">
-</p>
-
 <h1 align="center">News Tools</h1>
 
 <p align="center">Система управления новостным департаментом для вашего сервера. Работает с помощью <a href="https://github.com/DisnakeDev/disnake">disnake</a></p>
